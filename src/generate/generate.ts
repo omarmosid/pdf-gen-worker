@@ -7,7 +7,7 @@ export const generate = async (req: Request) => {
   console.log("body", body);
 
   doc.setFontSize(32);
-  doc.text(`Title goes here`, 20, 20).setFontSize(14).;
+  doc.text(`Title goes here`, 20, 20).setFontSize(14);
 
   Object.entries(body).forEach(([key, value], index) => {
     doc.text(`${key} ${value}`, 20, (index + 1) * 10 + 20);
